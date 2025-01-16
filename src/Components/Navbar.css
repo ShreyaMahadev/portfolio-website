@@ -1,0 +1,123 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.bg-info-subtle {
+  background-color: #23d8f8; /* Adjust this color as needed */
+}
+
+.text-info-emphasis {
+  color: #070707; /* Adjust this color as needed */
+}
+
+body {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to blue gradient */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  backdrop-filter: blur(15px); /* Subtle blur effect */
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Light shadow */
+  transition: all 0.3s ease;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #070707; /* Dark text for better contrast */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Navbar Brand */
+.navbar-brand:hover {
+  color: #6a11cb; /* Purple hover color */
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+/* Navbar Navigation */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center align navbar items */
+  align-items: center;
+  gap: 30px;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+}
+
+/* Navbar Link Styling */
+.nav-link {
+  color: #070707; /* Dark text for contrast */
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.7); /* Slight white background */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Hover Effect for Navbar Links */
+.nav-link:hover {
+  background-color: #6a11cb; /* Purple background on hover */
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Link Styling */
+.nav-link.active {
+  background-color: #2575fc; /* Blue shade for active link */
+  color: #ffffff;
+  transform: scale(1.05); /* Slight scaling effect for active link */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+  color: #070707; /* Dark toggler icon */
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:hover {
+  color: #6a11cb; /* Highlight color for the toggler */
+}
+
+/* Additional Media Query for Small Screens */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+}

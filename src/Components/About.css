@@ -1,0 +1,23 @@
+#about {
+    background-image: url('https://via.placeholder.com/1600x900'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+  }
+  
+  #about .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+  }
+  
+  #about .btn-custom {
+    background-color: #6a11cb;
+    border-color: #6a11cb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
