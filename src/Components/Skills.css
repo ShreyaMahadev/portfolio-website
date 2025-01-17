@@ -1,0 +1,87 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to blue gradient */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Skills Section Styles */
+  .skills-container {
+    background: linear-gradient(135deg, #a7ffeb, #ffb6b9); /* Light teal to peach gradient */
+    padding: 60px 0;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-top: 50px;
+  }
+  
+  .skills-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #343a40; /* Dark gray for contrast */
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .skill-item {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff; /* Light background for each skill item */
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+  }
+  
+  .skill-icon {
+    font-size: 4rem;
+    color: #2ecc71; /* Soft teal color for the icons */
+    margin-bottom: 15px;
+  }
+  
+  .skill-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #495057; /* Muted dark gray for text */
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .skills-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill-item {
+      width: 120px; /* Smaller items on mobile */
+      margin-bottom: 20px;
+    }
+  
+    .skills-title {
+      font-size: 2.2rem;
+    }
+  }
+  

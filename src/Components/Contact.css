@@ -1,0 +1,92 @@
+/* Contact Me Section Styles */
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to blue gradient */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    color: #070707; /* Text color compatible with light background */
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #070707;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #f0f0f0;
+    color: #070707;
+  }
+  
+  form input:focus, form textarea:focus {
+    outline: none;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(98, 0, 238, 0.5);
+  }
+  
+  form button {
+    background-color: #23d8f8; /* Matches bg-info-subtle */
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #070707; /* Matches text-info-emphasis */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #2575fc;
+    box-shadow: 0px 8px 15px rgba(98, 0, 238, 0.4);
+    transform: translateY(-3px);
+    color: #fff;
+  }
+  
+  .d-flex a {
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .d-flex a i {
+    transition: transform 0.3s ease;
+    color: #23d8f8; /* Matches bg-info-subtle */
+  }
+  
+  .d-flex a:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .d-flex a i:hover {
+    transform: rotate(15deg);
+    color: #2575fc; /* Highlight on hover */
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #070707; /* Matches text-info-emphasis */
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

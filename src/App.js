@@ -1,23 +1,24 @@
 import React from "react";
 import "./App.css";
-// import './Components/Navbar.css';
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import Project from "./Components/Project";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
     <>
       <Navbar />
-      <div id="home" className="container-fluid">
-        <About />
-        <h1 className="display-1 text-center">Welcome to My Portfolio</h1>
+      <div id="home" className="container-fluid mt-3"> 
+        <h1 className="display-1 text-center mt-5  ">Welcome to My Portfolio</h1>
         <p className="lead text-center">
           I'm a software engineer, web developer, and freelance graphic
           designer.
         </p>
+        <About />
       </div>
       <div id="skills">
         <Skills />
@@ -30,6 +31,7 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
+      <Footer/>
     </>
   );
 }

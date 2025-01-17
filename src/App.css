@@ -2,25 +2,101 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif; /* A modern, clean font */
 }
 
 .full-height {
   height: 100vh;
 }
 
-.bg-info-subtle {
-  background-color: #23d8f8; /* Adjust this color as needed */
-}
-
-.text-info-emphasis {
-  color: #070707; /* Adjust this color as needed */
-}
-
 body {
-  background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to blue gradient */
-  color: #fff;
-  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1a202c, #2d3748); /* Darker shades of blue and gray */
+  color: #e2e8f0; /* Soft white */
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  overflow: auto; /* To prevent scrollbars with animations */ 
+}
+
+/* Subtle floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* For dynamic background gradients */
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+  }
+  50% {
+    background: linear-gradient(135deg, #2d3748, #1a202c);
+  }
+  100% {
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+  }
+}
+
+.bg-dark {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  animation: float 6s ease-in-out infinite;
+}
+
+.bg-animated {
+  animation: gradientShift 8s infinite ease-in-out;
+}
+
+.text-highlight {
+  color: #63b3ed; /* Bright blue */
+  transition: color 0.3s ease-in-out;
+}
+
+.text-highlight:hover {
+  color: #fbd38d; /* Soft orange */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Button styling */
+.button {
+  background: #4a5568;
+  color: #e2e8f0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.button:hover {
+  background: #718096;
+  transform: scale(1.1);
+}
+
+/* A glowing border for aesthetic elements */
+.glow {
+  border: 2px solid #63b3ed;
+  box-shadow: 0 0 15px #63b3ed, 0 0 30px #63b3ed;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Decorative pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 15px #63b3ed;
+  }
+  50% {
+    box-shadow: 0 0 30px #63b3ed;
+  }
+  100% {
+    box-shadow: 0 0 15px #63b3ed;
+  }
+}
+
+.pulse {
+  animation: pulse 3s infinite ease-in-out;
 }
