@@ -6,6 +6,7 @@ import Project from "./Components/Project";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import './Components/Navbar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
       <div id="home" className="container-fluid mt-3"> 
         <h1 className="display-1 text-center mt-5  ">Welcome to My Portfolio</h1>
         <p className="lead text-center">
-          I'm a software engineer, web developer, and freelance graphic
-          designer.
-        </p>
+          I'm an engineering student and web developer
+    
+        </p>  
+      </div>
+      <div id="about">
         <About />
       </div>
       <div id="skills">

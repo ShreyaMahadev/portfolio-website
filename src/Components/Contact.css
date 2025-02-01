@@ -1,92 +1,73 @@
-/* Contact Me Section Styles */
+/* Contact Container */
+.contact-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism Effect */
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 600px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+}
 
-body {
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to blue gradient */
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+/* Title Styling */
+.contact-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
   
-  .container {
-    padding: 50px 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-    background: #fff;
-    color: #070707; /* Text color compatible with light background */
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #070707;
-  }
-  
-  form input, form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    background-color: #f0f0f0;
-    color: #070707;
-  }
-  
-  form input:focus, form textarea:focus {
-    outline: none;
-    transform: scale(1.02);
-    box-shadow: 0px 0px 10px rgba(98, 0, 238, 0.5);
-  }
-  
-  form button {
-    background-color: #23d8f8; /* Matches bg-info-subtle */
-    border: none;
-    padding: 10px 25px;
-    border-radius: 25px;
-    color: #070707; /* Matches text-info-emphasis */
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #2575fc;
-    box-shadow: 0px 8px 15px rgba(98, 0, 238, 0.4);
-    transform: translateY(-3px);
-    color: #fff;
-  }
-  
-  .d-flex a {
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .d-flex a i {
-    transition: transform 0.3s ease;
-    color: #23d8f8; /* Matches bg-info-subtle */
-  }
-  
-  .d-flex a:hover {
-    transform: scale(1.2);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .d-flex a i:hover {
-    transform: rotate(15deg);
-    color: #2575fc; /* Highlight on hover */
-  }
-  
-  footer {
-    margin-top: 40px;
-    text-align: center;
-    color: #070707; /* Matches text-info-emphasis */
-    font-size: 0.9rem;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+  letter-spacing: 2px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Social Links Container */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Social Media Icons with Default Colors */
+.social-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Default Icon Colors */
+.github {
+  color: #333; /* GitHub Black */
+}
+
+.linkedin {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.email {
+  color: #d44638; /* Email Red */
+}
+
+.leetcode {
+  color: #ffa116; /* LeetCode Orange */
+}
+
+/* Hover Effects */
+.social-icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+
+/* Contact Message */
+.contact-message {
+  font-size: 1.1rem;
+  color: #d4d4d4;
+  line-height: 1.6;
+  margin-top: 10px;
+  max-width: 500px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}

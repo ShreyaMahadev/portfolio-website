@@ -1,0 +1,79 @@
+.project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    padding: 50px 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+    text-align: center;
+    align-items: center;
+  }
+
+  .project {
+    width: 50%; /* Adjust the width as needed */
+    margin: 10px 0;
+  }
+  
+  .project-section h2 {
+    font-size: 2rem;
+    color: #fff; /* White text for the section heading */
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: #1c1c1c; /* Dark card background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    color: #fff; /* White text for the project title */
+  }
+  
+  .project-card p {
+    color: #bbb; /* Light gray for description text */
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .tech-stack {
+    margin-top: 10px;
+  }
+  
+  .tech-badge {
+    background-color: #4CAF50; /* Tech stack badges in green */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+  }
+  
+  .project-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #fff; /* White icons for links */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .project-links a:hover {
+    color: #0073e6; /* Blue hover effect on icons */
+  }
+  
