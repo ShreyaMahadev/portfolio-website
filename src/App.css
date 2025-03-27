@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Applying a smooth scrolling effect */
@@ -63,16 +64,18 @@ button {
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
   background: #ff9a8b; /* Pink hover effect */
   transform: scale(1.05); /* Slight grow on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Section styling for consistent spacing */
 section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -100,4 +103,15 @@ section p {
 
 .navbar a:hover {
   color: #00d4ff !important;
+}
+
+/* Add a modern card style for sections */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  max-width: 800px;
 }

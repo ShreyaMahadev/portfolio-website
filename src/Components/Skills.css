@@ -43,7 +43,9 @@ body {
 .skill-item {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #1a202c; /* Darker background for each skill item */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 20px;
   width: 150px;
@@ -52,8 +54,8 @@ body {
 }
 
 .skill-item:hover {
-  transform: scale(1.1);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+  transform: scale(1.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
 
 .skill-icon {

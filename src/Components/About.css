@@ -7,15 +7,16 @@
 }
 
 #about .container {
-  background: rgba(0, 0, 0, 0.85); /* Slightly darker overlay for contrast */
-  padding: 50px;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  backdrop-filter: blur(15px);
+  padding: 60px;
+  border-radius: 15px;
   max-width: 800px;
   margin: auto;
   color: #fff;
 
   text-align: center;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 #about .profile-picture {
@@ -28,15 +29,16 @@
 }
 
 #about h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #ff9a8b; /* Modern gradient color */
 }
 
 #about p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #d4d4d4; /* Slightly lighter text for readability */
+  color: #e0e0e0;
 }
 
 #about .btn-custom {
