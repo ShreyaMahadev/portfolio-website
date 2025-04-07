@@ -7,23 +7,17 @@
 }
 
 #about .container {
-  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
-  backdrop-filter: blur(15px);
-  padding: 60px;
-  border-radius: 15px;
   max-width: 800px;
   margin: auto;
   color: #fff;
-
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 #about .profile-picture {
-  width: 200px; /* Adjust size as needed */
+  width: 200px;
   height: 200px;
-  border-radius: 50%; /* Makes the image circular */
-  border: 4px solid #6a11cb; /* Stylish border */
+  border-radius: 50%;
+  border: 4px solid #6a11cb;
   margin: 20px auto;
   display: block;
 }
@@ -32,7 +26,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #ff9a8b; /* Modern gradient color */
+  color: #ff9a8b;
 }
 
 #about p {
@@ -53,6 +47,6 @@
 }
 
 #about .btn-custom:hover {
-  background-color: #9b42f5; /* Lighter purple on hover */
-  transform: scale(1.05); /* Slight grow effect */
+  background-color: #9b42f5;
+  transform: scale(1.05);
 }
