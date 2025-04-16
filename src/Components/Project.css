@@ -15,17 +15,18 @@
   }
   
   .project-section h2 {
-    font-size: 2rem;
+    font-size: 3rem; /* Match the font size of the skills title */
     color: #fff; /* White text for the section heading */
     margin-bottom: 30px;
     font-family: 'Arial', sans-serif;
-
+    font-weight: bold; /* Ensure consistent boldness */
   }
   
   .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between cards */
+    justify-content: center; /* Center the cards horizontally */
   }
   
   .project-card {
@@ -34,6 +35,9 @@
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    flex: 1 1 calc(33.333% - 20px); /* Adjust width for 3 cards per row */
+    box-sizing: border-box;
+    max-width: 300px; /* Optional: Set a max width for cards */
   }
   
   .project-card:hover {
@@ -76,4 +80,41 @@
   .project-links a:hover {
     color: #0073e6; /* Blue hover effect on icons */
   }
-  
+
+@media (max-width: 768px) {
+  .project-section {
+    padding: 30px 10px;
+  }
+
+  .project {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .project-grid {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 15px; /* Reduce spacing between cards */
+  }
+
+  .project-card {
+    flex: 1 1 100%; /* Full width for cards */
+    max-width: none; /* Remove max width */
+    padding: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem; /* Smaller font size for titles */
+  }
+
+  .project-card p {
+    font-size: 0.9rem; /* Smaller font size for descriptions */
+  }
+
+  .tech-badge {
+    padding: 3px 8px; /* Adjust padding for badges */
+    font-size: 0.8rem; /* Smaller font size for badges */
+  }
+
+  .project-links a {
+    font-size: 1.2rem; /* Adjust icon size */
+  }
+}

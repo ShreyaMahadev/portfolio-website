@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaJsSquare, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
 import { FaProjectDiagram } from 'react-icons/fa';
-import { SiCplusplus, SiNextdotjs, SiMongodb, SiMysql, SiCanva, SiTailwindcss} from "react-icons/si";
+import { SiCplusplus, SiExpress, SiMongodb, SiMysql, SiCanva, SiTailwindcss} from "react-icons/si";
 import "./Skills.css";
 
 const Skills = () => {
@@ -16,7 +16,7 @@ const Skills = () => {
     { icon: <FaGithub />, name: "GitHub", color: "#333333" },
 
     { icon: <FaReact />, name: "ReactJS", color: "#61DAFB" },
-    { icon: <SiNextdotjs />, name: "NextJS", color: "#000000" },
+    { icon: <SiExpress />, name: "ExpressJS", color: "#000000" },
     { icon: <SiMongodb />, name: "MongoDB", color: "#47A248" },
     { icon: <SiMysql />, name: "MySQL", color: "#00758F" },
     { icon: <SiCanva />, name: "Canva", color: "#00C4CC" },

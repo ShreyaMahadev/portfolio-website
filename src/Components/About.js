@@ -29,7 +29,7 @@ export default function About() {
               websites. I specialize in React, JavaScript, and modern web
               development frameworks.
             </p>
-            <a href="\Shreya_M_Resume_Updated.pdf" className="btn-custom" download>
+            <a href="\Shreya_M_Resume.pdf" className="btn-custom" download>
               Resume
             </a>
           

@@ -40,6 +40,12 @@ const ProjectSection = () => {
       githubLink: "https://github.com/ShreyaMahadev/AI-Powered-Credit-Card-Fraud-Detection-System",
       
     },
+    {
+      title: "CryptoTrackr",
+      description: "A cryptocurrency tracking application providing real-time updates and analytics.",
+      techStack: ["React", "TailWindCSS", "CoinGecko API"],
+      githubLink: "https://github.com/ShreyaMahadev/CryptoTrackr",
+    },
     
   ];
 
