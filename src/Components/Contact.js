@@ -3,7 +3,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div className="contact-container">
+    <>
       <h2 className="contact-title">Get In Touch</h2>
 
       {/* Social Media Links with Hover Effects */}
@@ -48,6 +48,6 @@ export default function Contact() {
         a good tech discussion, or to share your favorite programming pun.
         Let's make the tech world brighter!
       </p>
-    </div>
+    </>
   );
 }

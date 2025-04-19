@@ -13,10 +13,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <div id="home" className="container-fluid mt-3"> 
-        <h1 className="display-1 text-center mt-5  ">Welcome to My Portfolio</h1>
+      <div id="home" className="container-fluid"> 
+        <h1 className="display-1 text-center welcome-text slide-in-left">Welcome to My Portfolio</h1>
         <p className="lead text-center">
-          I'm an engineering student and web developer
+          I'm an engineering student and full-stack developer
     
         </p>  
       </div>

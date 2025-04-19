@@ -1,7 +1,9 @@
 /* Contact Container */
+/* Remove or comment out the .contact-container styles if not used anymore */
+/*
 .contact-container {
   text-align: center;
-  background: rgba(255, 255, 255, 0.1); /* Glassmorphism Effect */
+  background: rgba(255, 255, 255, 0.1); 
   backdrop-filter: blur(10px);
   border-radius: 12px;
   padding: 60px 30px;
@@ -10,12 +12,14 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   font-family: 'Arial', sans-serif;
 }
+*/
 
 /* Title Styling */
 .contact-title {
   font-size: 3rem; /* Match the font size of the skills title */
   font-weight: bold; /* Ensure consistent boldness */
   color: #fff;
+  text-align: center;
   margin-bottom: 20px;
   letter-spacing: 2px;
   font-family: 'Arial', sans-serif;

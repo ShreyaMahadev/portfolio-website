@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
     padding: 50px 0;
-    background-color: #121212; /* Dark background */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
     color: #e0e0e0; /* Light text for contrast */
     text-align: center;
     align-items: center;
@@ -30,7 +30,7 @@
   }
   
   .project-card {
-    background: #1c1c1c; /* Dark card background */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark card background */
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
