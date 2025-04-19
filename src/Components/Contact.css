@@ -1,18 +1,15 @@
 /* Contact Container */
-/* Remove or comment out the .contact-container styles if not used anymore */
-/*
+/* Added border and card-like styling for the Get In Touch box */
 .contact-container {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1); 
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  padding: 60px 30px;
-  margin: 40px auto;
-  max-width: 700px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  font-family: 'Arial', sans-serif;
+  border: 2px solid #00d4ff; /* Cyan border */
+  border-radius: 12px; /* Rounded corners */
+  padding: 40px; /* Padding inside the card */
+  background: rgba(0, 0, 0, 0.8); /* Dark background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  max-width: 600px; /* Limit the width */
+  margin: 20px auto; /* Center the card */
+  text-align: center; /* Center the content */
 }
-*/
 
 /* Title Styling */
 .contact-title {
