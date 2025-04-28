@@ -83,8 +83,13 @@
   }
 
   .social-links {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row; /* Arrange icons horizontally */
+    justify-content: center; /* Center icons horizontally */
+    gap: 15px; /* Adjust spacing between icons */
+  }
+
+  .social-icon {
+    font-size: 1.5rem; /* Adjust icon size for smaller screens */
   }
 
   .contact-message {
