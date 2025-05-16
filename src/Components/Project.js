@@ -46,7 +46,18 @@ const ProjectSection = () => {
       techStack: ["React", "TailWindCSS", "CoinGecko API"],
       githubLink: "https://github.com/ShreyaMahadev/CryptoTrackr",
     },
-    
+    {
+      title: "Plant Disease Prediction Using CNN",
+      description: "A deep learning-based system to predict plant diseases using Convolutional Neural Networks.",
+      techStack: ["Python", "TensorFlow", "Keras"],
+      githubLink: "https://github.com/ShreyaMahadev/Plant-Disease-Prediction-Using-CNN",
+    },
+    {
+      title: "DSCE Nexus",
+      description: "A comprehensive platform where students can find the calendar of events",
+      techStack: ["React", "TailWindCSS"],
+      githubLink: "https://github.com/ShreyaMahadev/DSCE-Nexus",
+    },
   ];
 
   return (

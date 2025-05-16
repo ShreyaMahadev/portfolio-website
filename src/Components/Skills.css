@@ -74,30 +74,15 @@ body {
 /* Responsiveness for smaller screens */
 @media (max-width: 768px) {
   .skills-grid {
-    flex-wrap: nowrap; /* Disable wrapping */
-    overflow-x: scroll; /* Enable horizontal scrolling */
-    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust columns dynamically */
     gap: 20px; /* Adjust spacing between items */
-    padding: 10px; /* Add padding for better scrolling experience */
-    min-width: 100%; /* Ensure the grid is wide enough to scroll */
-  }
-
-  .skills-grid::-webkit-scrollbar {
-    height: 8px; /* Adjust scrollbar height */
-  }
-
-  .skills-grid::-webkit-scrollbar-thumb {
-    background-color: #888; /* Scrollbar thumb color */
-    border-radius: 4px; /* Rounded scrollbar thumb */
-  }
-
-  .skills-grid::-webkit-scrollbar-track {
-    background-color: #444; /* Scrollbar track color */
+    padding: 10px; /* Add padding for better spacing */
   }
 
   .skill-item {
-    flex: 0 0 auto; /* Prevent items from shrinking */
-    width: 120px; /* Adjust width for smaller screens */
+    width: auto; /* Allow items to adjust width dynamically */
   }
 
   .skills-title {
