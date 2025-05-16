@@ -2,119 +2,173 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-    padding: 50px 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
-    color: #e0e0e0; /* Light text for contrast */
-    text-align: center;
-    align-items: center;
-  }
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
 
-  .project {
-    width: 50%; /* Adjust the width as needed */
-    margin: 10px 0;
-  }
-  
-  .project-section h2 {
-    font-size: 3rem; /* Match the font size of the skills title */
-    color: #fff; /* White text for the section heading */
-    margin-bottom: 30px;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold; /* Ensure consistent boldness */
-  }
-  
+.project {
+  width: 50%; /* Adjust the width as needed */
+  margin: 10px 0;
+}
+
+.project-section h2 {
+  font-size: 3rem; /* Match the font size of the skills title */
+  color: #fff; /* White text for the section heading */
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold; /* Ensure consistent boldness */
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards */
+  justify-content: center; /* Center the cards horizontally */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark card background */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.333% - 20px); /* Adjust width for 3 cards per row */
+  box-sizing: border-box;
+  max-width: 300px; /* Optional: Set a max width for cards */
+  min-width: 240px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #232526 60%, #00d4ff 100%);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #fff; /* White text for the project title */
+}
+
+.project-card p {
+  color: #bbb; /* Light gray for description text */
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.tech-stack {
+  margin-top: 10px;
+}
+
+.tech-badge {
+  background-color: #4CAF50; /* Tech stack badges in green */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 5px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.project-links a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #fff; /* White icons for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-links a:hover {
+  color: #0073e6; /* Blue hover effect on icons */
+}
+
+@media (max-width: 1024px) {
   .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust spacing between cards */
-    justify-content: center; /* Center the cards horizontally */
+    gap: 16px;
   }
-  
   .project-card {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark card background */
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-    flex: 1 1 calc(33.333% - 20px); /* Adjust width for 3 cards per row */
-    box-sizing: border-box;
-    max-width: 300px; /* Optional: Set a max width for cards */
+    max-width: 90vw;
+    min-width: 180px;
   }
-  
-  .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-  }
-  
-  .project-card h3 {
-    font-size: 1.5rem;
-    color: #fff; /* White text for the project title */
-  }
-  
-  .project-card p {
-    color: #bbb; /* Light gray for description text */
-    font-size: 1rem;
-    margin: 10px 0;
-  }
-  
-  .tech-stack {
-    margin-top: 10px;
-  }
-  
-  .tech-badge {
-    background-color: #4CAF50; /* Tech stack badges in green */
-    color: white;
-    padding: 5px 10px;
-    border-radius: 8px;
-    margin: 5px;
-    display: inline-block;
-  }
-  
-  .project-links a {
-    margin: 0 10px;
-    font-size: 1.5rem;
-    color: #fff; /* White icons for links */
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .project-links a:hover {
-    color: #0073e6; /* Blue hover effect on icons */
-  }
+}
 
 @media (max-width: 768px) {
   .project-section {
-    padding: 30px 10px;
+    padding: 24px 2vw;
   }
-
   .project {
     width: 90%; /* Adjust width for smaller screens */
   }
-
   .project-grid {
     flex-direction: column; /* Stack cards vertically */
-    gap: 15px; /* Reduce spacing between cards */
+    gap: 18px; /* Reduce spacing between cards */
+    width: 100%;
   }
-
   .project-card {
     flex: 1 1 100%; /* Full width for cards */
-    max-width: none; /* Remove max width */
-    padding: 15px;
+    max-width: 98vw;
+    min-width: 0;
+    padding: 12px 8px;
   }
-
   .project-card h3 {
-    font-size: 1.2rem; /* Smaller font size for titles */
+    font-size: 1.1rem; /* Smaller font size for titles */
   }
-
   .project-card p {
-    font-size: 0.9rem; /* Smaller font size for descriptions */
+    font-size: 0.95rem; /* Smaller font size for descriptions */
   }
-
   .tech-badge {
-    padding: 3px 8px; /* Adjust padding for badges */
-    font-size: 0.8rem; /* Smaller font size for badges */
+    padding: 4px 7px; /* Adjust padding for badges */
+    font-size: 0.85rem; /* Smaller font size for badges */
   }
-
   .project-links a {
     font-size: 1.2rem; /* Adjust icon size */
   }
+}
+
+@media (max-width: 480px) {
+  .project-section {
+    padding: 10px 0;
+  }
+  .project-card {
+    padding: 8px 2px;
+    border-radius: 8px;
+  }
+  .project-card h3 {
+    font-size: 1rem;
+  }
+  .project-card p {
+    font-size: 0.85rem;
+  }
+  .tech-badge {
+    font-size: 0.75rem;
+    padding: 3px 5px;
+    margin: 2px;
+  }
+  .project-links a {
+    font-size: 1rem;
+  }
+}
+
+/* Hide scrollbars for a cleaner mobile look */
+.project-section, .project-grid {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.project-section::-webkit-scrollbar, .project-grid::-webkit-scrollbar {
+  display: none;
 }

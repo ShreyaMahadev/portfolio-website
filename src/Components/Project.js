@@ -50,13 +50,19 @@ const ProjectSection = () => {
       title: "Plant Disease Prediction Using CNN",
       description: "A deep learning-based system to predict plant diseases using Convolutional Neural Networks.",
       techStack: ["Python", "TensorFlow", "Keras"],
-      githubLink: "https://github.com/ShreyaMahadev/Plant-Disease-Prediction-Using-CNN",
+      githubLink: "https://github.com/ShreyaMahadev/Plant_Disease_Prediction_Using_CNN",
     },
     {
       title: "DSCE Nexus",
       description: "A comprehensive platform where students can find the calendar of events",
       techStack: ["React", "TailWindCSS"],
       githubLink: "https://github.com/ShreyaMahadev/DSCE-Nexus",
+    },
+    {
+      title: "Generating Hand Written Digits using DCGAN",
+      description: "A deep learning project that generates handwritten digits using Deep Convolutional Generative Adversarial Networks (DCGAN).",
+      techStack: ["Python", "TensorFlow", "Keras", "DCGAN"],
+      githubLink: "https://github.com/ShreyaMahadev/Generating-Hand-Written-Digits-using-DCGAN",
     },
   ];
 
