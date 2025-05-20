@@ -1,174 +1,132 @@
 .project-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 50px 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
-  color: #e0e0e0; /* Light text for contrast */
-  text-align: center;
-  align-items: center;
-  width: 100%;
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, 0.8);
   min-height: 100vh;
-  box-sizing: border-box;
-}
-
-.project {
-  width: 50%; /* Adjust the width as needed */
-  margin: 10px 0;
-}
-
-.project-section h2 {
-  font-size: 3rem; /* Match the font size of the skills title */
-  color: #fff; /* White text for the section heading */
-  margin-bottom: 30px;
-  font-family: 'Arial', sans-serif;
-  font-weight: bold; /* Ensure consistent boldness */
 }
 
 .project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Adjust spacing between cards */
-  justify-content: center; /* Center the cards horizontally */
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .project-card {
-  background-color: rgba(0, 0, 0, 0.8); /* Dark card background */
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-  flex: 1 1 calc(33.333% - 20px); /* Adjust width for 3 cards per row */
-  box-sizing: border-box;
-  max-width: 300px; /* Optional: Set a max width for cards */
-  min-width: 240px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, #232526 0%, #414345 100%);
-  border: 1px solid rgba(255,255,255,0.05);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
-  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 154, 139, 0.1));
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(135deg, #232526 60%, #00d4ff 100%);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover::before {
+  opacity: 1;
 }
 
 .project-card h3 {
-  font-size: 1.5rem;
-  color: #fff; /* White text for the project title */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #00d4ff;
 }
 
 .project-card p {
-  color: #bbb; /* Light gray for description text */
-  font-size: 1rem;
-  margin: 10px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .tech-stack {
-  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
 }
 
 .tech-badge {
-  background-color: #4CAF50; /* Tech stack badges in green */
-  color: white;
-  padding: 5px 10px;
-  border-radius: 8px;
-  margin: 5px;
-  display: inline-block;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #00d4ff, #00a6ff);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.tech-badge:hover {
+  transform: scale(1.1);
+}
+
+.project-links {
+  margin-top: 20px;
 }
 
 .project-links a {
+  font-size: 1.8rem;
   margin: 0 10px;
-  font-size: 1.5rem;
-  color: #fff; /* White icons for links */
-  text-decoration: none;
-  transition: color 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .project-links a:hover {
-  color: #0073e6; /* Blue hover effect on icons */
+  transform: scale(1.2);
+  color: #00d4ff;
 }
 
 @media (max-width: 1024px) {
   .project-grid {
-    gap: 16px;
-  }
-  .project-card {
-    max-width: 90vw;
-    min-width: 180px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .project-section {
-    padding: 24px 2vw;
+    padding: 60px 15px;
   }
-  .project {
-    width: 90%; /* Adjust width for smaller screens */
-  }
-  .project-grid {
-    flex-direction: column; /* Stack cards vertically */
-    gap: 18px; /* Reduce spacing between cards */
-    width: 100%;
-  }
-  .project-card {
-    flex: 1 1 100%; /* Full width for cards */
-    max-width: 98vw;
-    min-width: 0;
-    padding: 12px 8px;
-  }
+  
   .project-card h3 {
-    font-size: 1.1rem; /* Smaller font size for titles */
-  }
-  .project-card p {
-    font-size: 0.95rem; /* Smaller font size for descriptions */
-  }
-  .tech-badge {
-    padding: 4px 7px; /* Adjust padding for badges */
-    font-size: 0.85rem; /* Smaller font size for badges */
-  }
-  .project-links a {
-    font-size: 1.2rem; /* Adjust icon size */
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .project-section {
-    padding: 10px 0;
+    padding: 40px 10px;
   }
+  
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  
   .project-card {
-    padding: 8px 2px;
-    border-radius: 8px;
+    padding: 20px;
   }
+  
   .project-card h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
-  .project-card p {
-    font-size: 0.85rem;
-  }
+  
   .tech-badge {
-    font-size: 0.75rem;
-    padding: 3px 5px;
-    margin: 2px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
   }
-  .project-links a {
-    font-size: 1rem;
-  }
-}
-
-/* Hide scrollbars for a cleaner mobile look */
-.project-section, .project-grid {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.project-section::-webkit-scrollbar, .project-grid::-webkit-scrollbar {
-  display: none;
 }

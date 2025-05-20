@@ -13,14 +13,14 @@ html {
 
 /* Body styling */
 body {
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #000, #1a1a1a, #333); /* Dark gradient background */
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(135deg, #000, #1a1a1a, #333);
   color: #fff;
-  animation: gradientShift 15s ease infinite; /* Subtle shifting gradient animation */
-  overflow: auto; /* Prevents unnecessary scrollbars */
+  animation: gradientShift 15s ease infinite;
+  overflow: auto;
 }
 
-/* Subtle floating animation for interactive elements */
+/* Animations */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -30,7 +30,6 @@ body {
   }
 }
 
-/* Dynamic shifting gradient for the body background */
 @keyframes gradientShift {
   0% {
     background: linear-gradient(135deg, #000, #1a1a1a, #333);
@@ -43,250 +42,157 @@ body {
   }
 }
 
-/* Styling links */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Links and Buttons */
 a {
-  color: #00d4ff; /* Cyan for links */
+  color: #00d4ff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 a:hover {
-  color: #ff9a8b; /* Light pink hover effect */
+  color: #ff9a8b;
+  transform: scale(1.05);
 }
 
-/* Button styling */
 button {
-  background: #00d4ff; /* Cyan buttons */
+  background: linear-gradient(135deg, #00d4ff, #00a6ff);
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 12px 24px;
+  border-radius: 8px;
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-family: 'Raleway', sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background: #ff9a8b; /* Pink hover effect */
-  transform: scale(1.05); /* Slight grow on hover */
+  transform: translateY(-2px) scale(1.02);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Section styling for consistent spacing */
+/* Section Styling */
 section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-#home {
-  padding-top: 120px;
-  min-height: 100vh;
-}
-
-.welcome-text {
+  padding: 100px 20px;
   opacity: 0;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
 }
 
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Section headers */
-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-section p {
-  font-size: 1.2rem;
-  color: #d4d4d4; /* Slightly lighter text for readability */
-}
-
-/* Home section styling */
 #home {
-  padding-top: 100px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding-top: 80px;
 }
 
-#home h1 {
+.welcome-text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
   opacity: 0;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards 0.2s;
 }
 
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.lead {
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards 0.4s;
 }
 
-/* Navbar compatibility */
-.navbar {
-  background-color: #000 !important;
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  padding: 0 30px;
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: background 0.3s;
-}
-
-.navbar a {
-  color: #fff !important;
-  margin: 0 12px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: color 0.3s, border-bottom 0.3s;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
-}
-
-.navbar a:hover,
-.navbar a.active {
-  color: #00d4ff !important;
-  border-bottom: 2px solid #00d4ff;
-}
-
-/* Add a modern card style for sections */
+/* Card Styling */
 .card {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
   border-radius: 16px;
-  padding: 32px 24px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-  margin: 32px auto;
-  max-width: 800px;
-  transition: transform 0.2s, box-shadow 0.2s;
-  cursor: pointer;
-}
-
-/* Make the Contact Me card background black */
-.contact-card {
-  background: #000 !important;
+  padding: 32px;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive typography and spacing */
-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-section p {
-  font-size: 1.2rem;
-  color: #d4d4d4;
-  line-height: 1.7;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* Responsive design for mobile and tablet */
-@media (max-width: 900px) {
-  .card {
-    max-width: 95%;
-    padding: 24px 10px;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .welcome-text {
+    font-size: 3rem;
   }
+  
   section {
-    padding: 60px 8px;
+    padding: 80px 15px;
   }
-  section h1 {
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 2.5rem;
+  }
+  
+  .lead {
+    font-size: 1.2rem;
+  }
+  
+  section {
+    padding: 60px 10px;
+  }
+  
+  .card {
+    padding: 24px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-text {
     font-size: 2rem;
   }
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
-    min-height: 48px;
-  }
-  .navbar a {
+  
+  .lead {
     font-size: 1rem;
-    margin: 6px 0;
   }
-  .card {
-    padding: 16px 4px;
-    margin: 16px auto;
-  }
+  
   section {
-    padding: 40px 4px;
+    padding: 40px 8px;
   }
-  section h1 {
-    font-size: 1.3rem;
+  
+  .card {
+    padding: 16px;
+    margin: 10px;
   }
-  section p {
-    font-size: 1rem;
-  }
+  
   button {
-    padding: 8px 14px;
-    font-size: 1rem;
+    padding: 10px 20px;
   }
 }
 
-/* Add focus styles for accessibility */
-a:focus, button:focus, .card:focus {
+/* Accessibility */
+:focus {
   outline: 2px solid #00d4ff;
   outline-offset: 2px;
 }
 
-
-.slide-in-left {
-  opacity: 0;
-  transform: translateX(-100%);
-  animation: slideInLeft 1s ease-out forwards;
-}
-
-@keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-in-left-slow {
-  opacity: 0;
-  transform: translateX(-100%);
-  animation: slideInLeft 2s ease-out forwards;
-}
-
-@keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-#contact {
-  scroll-margin-top: 80px; /* Adjust this value based on your navbar height */
-}
-
-/* Added spacing below the projects section to separate it from the contact section */
-#projects {
-  margin-bottom: 100px; /* Add sufficient spacing below the projects section */
+/* Performance Optimizations */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
