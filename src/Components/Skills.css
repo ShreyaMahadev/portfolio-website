@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.8); /* Purple to blue gradient */
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -17,18 +17,19 @@ body {
 
 /* Skills Section Styles */
 .skills-container {
-  background-color: rgba(0, 0, 0, 0.8); /* More intense black gradient */
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 60px 0;
   text-align: center;
   border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow for a deeper effect */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
   margin-top: 50px;
+  overflow: hidden;
 }
 
 .skills-title {
   font-size: 3rem;
   font-weight: 600;
-  color: #e2e8f0; /* Light gray for the title */
+  color: #e2e8f0;
   margin-bottom: 30px;
   font-family: 'Roboto', sans-serif;
 }
@@ -50,7 +51,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   width: 150px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Darker shadow */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -61,31 +62,46 @@ body {
 
 .skill-icon {
   font-size: 4rem;
-  color: #2ecc71; /* Soft teal color for the icons */
   margin-bottom: 15px;
 }
 
 .skill-name {
   font-size: 1rem;
   font-weight: bold;
-  color: #e2e8f0; /* Light gray for the text */
+  color: #e2e8f0;
 }
 
-/* Responsiveness for smaller screens */
+/* Slider for mobile */
 @media (max-width: 768px) {
   .skills-grid {
-    flex-wrap: wrap; /* Enable wrapping */
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust columns dynamically */
-    gap: 20px; /* Adjust spacing between items */
-    padding: 10px; /* Add padding for better spacing */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 0;
+    gap: 20px;
+    scroll-behavior: smooth;
   }
 
   .skill-item {
-    width: auto; /* Allow items to adjust width dynamically */
+    flex: 0 0 auto;
+    width: 120px;
+    scroll-snap-align: center;
+    margin: 0 10px;
   }
 
-  .skills-title {
-    font-size: 2rem;
+  .skills-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .skills-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  .skills-grid::-webkit-scrollbar-thumb {
+    background: #00d4ff;
+    border-radius: 10px;
   }
 }

@@ -6,7 +6,6 @@ export default function Contact() {
     <>
       <h2 className="contact-title">Get In Touch</h2>
 
-      {/* Social Media Links with Hover Effects */}
       <div className="social-links">
         <a
           href="https://github.com/ShreyaMahadev"
@@ -40,9 +39,16 @@ export default function Contact() {
         >
           <i className="fas fa-code"></i>
         </a>
+        <a
+          href="https://www.instagram.com/shreya_mahadev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon instagram"
+        >
+          <i className="fab fa-instagram"></i>
+        </a>
       </div>
 
-      {/* Contact Message */}
       <p className="contact-message">
         Feel free to connect with me, whether it's for a coding collaboration,
         a good tech discussion, or to share your favorite programming pun.

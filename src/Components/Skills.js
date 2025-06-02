@@ -14,9 +14,8 @@ const Skills = () => {
     { icon: <SiTailwindcss />, name: "TailwindCSS", color: "#06B6D4" },
     { icon: <FaJsSquare />, name: "JavaScript", color: "#F7DF1E" },
     { icon: <FaGithub />, name: "GitHub", color: "#333333" },
-
     { icon: <FaReact />, name: "ReactJS", color: "#61DAFB" },
-    { icon: <SiExpress />, name: "ExpressJS", color: "#000000" },
+    { icon: <SiExpress style={{ color: '#ffffff' }} />, name: "ExpressJS", color: "#ffffff" },
     { icon: <SiMongodb />, name: "MongoDB", color: "#47A248" },
     { icon: <SiMysql />, name: "MySQL", color: "#00758F" },
     { icon: <SiCanva />, name: "Canva", color: "#00C4CC" },

@@ -29,7 +29,7 @@ body {
   align-items: center;
   text-align: center;
   padding-top: 80px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -60,7 +60,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   letter-spacing: 1px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   padding: 15px 30px;
   border-radius: 10px;
   backdrop-filter: blur(5px);
@@ -75,36 +75,20 @@ body {
 }
 
 @keyframes gradientText {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }
 
 @keyframes gradientShift {
-  0% {
-    background: linear-gradient(135deg, #000, #1a1a1a, #333);
-  }
-  50% {
-    background: linear-gradient(135deg, #333, #1a1a1a, #000);
-  }
-  100% {
-    background: linear-gradient(135deg, #000, #1a1a1a, #333);
-  }
+  0% { background: linear-gradient(135deg, #000, #1a1a1a, #333); }
+  50% { background: linear-gradient(135deg, #333, #1a1a1a, #000); }
+  100% { background: linear-gradient(135deg, #000, #1a1a1a, #333); }
 }
 
 @keyframes fadeInUp {
