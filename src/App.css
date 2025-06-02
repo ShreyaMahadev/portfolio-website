@@ -29,7 +29,7 @@ body {
   align-items: center;
   text-align: center;
   padding-top: 80px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -38,14 +38,35 @@ body {
 
 /* Name animation */
 .welcome-text {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   margin-bottom: 20px;
   opacity: 0;
   transform: translateX(-100%);
   animation: slideIn 1s ease forwards;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #00d4ff, #ff9a8b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: slideIn 1s ease forwards, gradientText 3s ease infinite;
 }
 
+.lead {
+  font-size: 1.8rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards 0.4s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+/* Animations */
 @keyframes slideIn {
   to {
     opacity: 1;
@@ -53,7 +74,18 @@ body {
   }
 }
 
-/* Rest of your existing styles */
+@keyframes gradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -123,13 +155,6 @@ section {
   animation: fadeInUp 0.8s ease forwards;
 }
 
-.lead {
-  font-size: 1.5rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease forwards 0.4s;
-}
-
 /* Card Styling */
 .card {
   background: rgba(255, 255, 255, 0.05);
@@ -149,7 +174,7 @@ section {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .welcome-text {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   
   section {
@@ -159,11 +184,12 @@ section {
 
 @media (max-width: 768px) {
   .welcome-text {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   
   .lead {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    padding: 10px 20px;
   }
   
   section {
@@ -178,11 +204,11 @@ section {
 
 @media (max-width: 480px) {
   .welcome-text {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   
   .lead {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   section {
