@@ -29,11 +29,27 @@ body {
   align-items: center;
   text-align: center;
   padding-top: 80px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+              url('https://images.pexels.com/photos/7887135/pexels-photo-7887135.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 212, 255, 0.1),
+    rgba(0, 0, 0, 0.9)
+  );
+  pointer-events: none;
 }
 
 /* Name animation */
@@ -44,12 +60,14 @@ body {
   opacity: 0;
   transform: translateX(-100%);
   animation: slideIn 1s ease forwards;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(45deg, #00d4ff, #ff9a8b);
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  background: linear-gradient(45deg, #00d4ff, #00a6ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% auto;
   animation: slideIn 1s ease forwards, gradientText 3s ease infinite;
+  position: relative;
+  z-index: 1;
 }
 
 .lead {
@@ -64,6 +82,9 @@ body {
   padding: 15px 30px;
   border-radius: 10px;
   backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(0, 212, 255, 0.2);
 }
 
 /* Animations */
@@ -184,15 +205,21 @@ section {
     padding: 24px;
     margin: 15px;
   }
+
+  #home {
+    background-attachment: scroll;
+  }
 }
 
 @media (max-width: 480px) {
   .welcome-text {
     font-size: 2.2rem;
+    padding: 0 15px;
   }
   
   .lead {
     font-size: 1.1rem;
+    padding: 10px 15px;
   }
   
   section {
