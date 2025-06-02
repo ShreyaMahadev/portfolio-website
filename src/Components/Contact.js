@@ -40,7 +40,7 @@ export default function Contact() {
           <i className="fas fa-code"></i>
         </a>
         <a
-          href="https://www.instagram.com/shreya_mahadev/"
+          href="https://www.instagram.com/_shreya_mahadev_/"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon instagram"
