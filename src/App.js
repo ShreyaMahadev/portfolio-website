@@ -14,11 +14,13 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [showName, setShowName] = useState(false);
 
   useEffect(() => {
     // Simulate loading time
     setTimeout(() => {
       setLoading(false);
+      setShowName(true);
     }, 1500);
   }, []);
 
@@ -31,11 +33,13 @@ function App() {
       <ThemeToggle />
       <ScrollToTop />
       <Navbar />
-      <div id="home" className="container-fluid"> 
-        <h1 className="display-1 text-center welcome-text slide-in-left">Welcome to My Portfolio</h1>
+      <div id="home" className="container-fluid">
+        <h1 className={`display-1 text-center welcome-text ${showName ? 'slide-in-left' : ''}`}>
+          Welcome to My Portfolio
+        </h1>
         <p className="lead text-center">
           I'm an engineering student and full-stack developer
-        </p>  
+        </p>
       </div>
       <div id="about">
         <About />
@@ -49,7 +53,7 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
