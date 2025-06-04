@@ -14,9 +14,8 @@ html {
 /* Body styling */
 body {
   font-family: 'Raleway', sans-serif;
-  background: linear-gradient(135deg, #000, #1a1a1a, #333);
+  background: linear-gradient(135deg, #2c3e50, #3498db);
   color: #fff;
-  animation: gradientShift 15s ease infinite;
   overflow: auto;
 }
 
@@ -29,8 +28,8 @@ body {
   align-items: center;
   text-align: center;
   padding-top: 80px;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-              url('https://images.pexels.com/photos/7887135/pexels-photo-7887135.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -46,8 +45,8 @@ body {
   bottom: 0;
   background: linear-gradient(
     45deg,
-    rgba(0, 212, 255, 0.1),
-    rgba(0, 0, 0, 0.9)
+    rgba(44, 62, 80, 0.8),
+    rgba(52, 152, 219, 0.8)
   );
   pointer-events: none;
 }
@@ -60,12 +59,7 @@ body {
   opacity: 0;
   transform: translateX(-100%);
   animation: slideIn 1s ease forwards;
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
-  background: linear-gradient(45deg, #00d4ff, #00a6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% auto;
-  animation: slideIn 1s ease forwards, gradientText 3s ease infinite;
+  color: #fff;
   position: relative;
   z-index: 1;
 }
@@ -75,16 +69,14 @@ body {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease forwards 0.4s;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   letter-spacing: 1px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   padding: 15px 30px;
   border-radius: 10px;
-  backdrop-filter: blur(5px);
   position: relative;
   z-index: 1;
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Animations */
@@ -93,23 +85,6 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-@keyframes gradientText {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-@keyframes gradientShift {
-  0% { background: linear-gradient(135deg, #000, #1a1a1a, #333); }
-  50% { background: linear-gradient(135deg, #333, #1a1a1a, #000); }
-  100% { background: linear-gradient(135deg, #000, #1a1a1a, #333); }
 }
 
 @keyframes fadeInUp {
@@ -125,18 +100,18 @@ body {
 
 /* Links and Buttons */
 a {
-  color: #00d4ff;
+  color: #3498db;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 a:hover {
-  color: #ff9a8b;
+  color: #2980b9;
   transform: scale(1.05);
 }
 
 button {
-  background: linear-gradient(135deg, #00d4ff, #00a6ff);
+  background: #3498db;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -238,7 +213,7 @@ section {
 
 /* Accessibility */
 :focus {
-  outline: 2px solid #00d4ff;
+  outline: 2px solid #3498db;
   outline-offset: 2px;
 }
 
