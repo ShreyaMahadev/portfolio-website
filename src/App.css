@@ -14,7 +14,7 @@ html {
 /* Body styling */
 body {
   font-family: 'Raleway', sans-serif;
-  background: linear-gradient(135deg, #2c3e50, #3498db);
+  background: #1a1a1a;
   color: #fff;
   overflow: auto;
 }
@@ -28,8 +28,8 @@ body {
   align-items: center;
   text-align: center;
   padding-top: 80px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+              url('https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -45,8 +45,8 @@ body {
   bottom: 0;
   background: linear-gradient(
     45deg,
-    rgba(44, 62, 80, 0.8),
-    rgba(52, 152, 219, 0.8)
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
   );
   pointer-events: none;
 }
@@ -100,18 +100,18 @@ body {
 
 /* Links and Buttons */
 a {
-  color: #3498db;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 a:hover {
-  color: #2980b9;
+  color: #ccc;
   transform: scale(1.05);
 }
 
 button {
-  background: #3498db;
+  background: #333;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -213,7 +213,7 @@ section {
 
 /* Accessibility */
 :focus {
-  outline: 2px solid #3498db;
+  outline: 2px solid #333;
   outline-offset: 2px;
 }
 
