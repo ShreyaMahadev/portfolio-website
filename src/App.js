@@ -45,14 +45,21 @@ function App() {
           className={`display-1 text-center welcome-text ${showName ? 'slide-in-left' : ''}`}
           data-aos="fade-down"
         >
-          Welcome to My Portfolio
+          Hey! It's Shreya M
         </h1>
         <p 
           className="lead text-center"
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          I'm an engineering student and full-stack developer
+          🚀 Engineering Student | Full-Stack Developer | Tech Explorer
+        </p>
+        <p 
+          className="subtitle text-center"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          Building innovative solutions with modern technologies
         </p>
       </div>
       <div id="about" data-aos="fade-up">
