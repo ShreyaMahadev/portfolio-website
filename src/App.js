@@ -52,7 +52,7 @@ function App() {
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          🚀 Engineering Student | Full-Stack Developer | Tech Explorer
+          🚀 Full-Stack Developer | Machine Learning Enthusiast | Tech Explorer
         </p>
         <p 
           className="subtitle text-center"
