@@ -59,10 +59,6 @@ The build files will be generated in the `build` folder.
 - **`public`**: Contains static assets like `index.html` and images.
 - **`src`**: Contains the main application logic and styles.
 
-## Screenshots
-
-![Portfolio Screenshot](https://via.placeholder.com/800x400)  
-*Add a screenshot of your website here.*
 
 ## Contact
 

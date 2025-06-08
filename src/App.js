@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import About from "./Components/About";
-import Project from "./Components/Project";
-import Skills from "./Components/Skills";
-import Contact from "./Components/Contact";
+import About from "./Components/About/About";
+import Project from "./Components/Project/Project";
+import Skills from "./Components/Skills/Skills";
+import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer";
 import ThemeToggle from "./Components/ThemeToggle";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -52,7 +52,7 @@ function App() {
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          🚀 Full-Stack Developer | Machine Learning Enthusiast | Tech Explorer
+          🚀 Web Developer | Machine Learning Enthusiast | Tech Explorer
         </p>
         <p 
           className="subtitle text-center"

@@ -1,6 +1,8 @@
 /* General Navbar Styling */
 .navbar {
-  background-color: rgba(10, 10, 10, 0.9) !important;
+  
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 15px 30px;
   font-family: "Poppins", sans-serif;
