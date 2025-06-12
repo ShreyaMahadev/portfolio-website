@@ -29,7 +29,7 @@ const ProjectSection = () => {
     {
       title: "Pollution Prediction",
       description: "An IoT-based pollution prediction system.",
-      techStack: ["IOT", "Embedded C"],
+      techStack: ["IOT", "Embedded C","Arduino"],
       githubLink: "https://github.com/ShreyaMahadev/Pollution-Prediction",
       
     },

@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
       
-        <div className="container">
+        <div className="container" >
          
             {/* Circular Profile Picture */}
             <img
