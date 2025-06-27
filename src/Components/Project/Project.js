@@ -27,10 +27,10 @@ const ProjectCard = ({ title, description, techStack, githubLink, liveDemoLink }
 const ProjectSection = () => {
   const projects = [
     {
-      title: "Pollution Prediction",
-      description: "An IoT-based pollution prediction system.",
-      techStack: ["IOT", "Embedded C","Arduino"],
-      githubLink: "https://github.com/ShreyaMahadev/Pollution-Prediction",
+      title: "SliceLink",
+      description: "A simple and efficient URL Shortener that allows users to shorten long URLs for easier sharing and management.",
+      techStack: ["Node.js", "Express", "MongoDB"],
+      githubLink: "https://github.com/ShreyaMahadev/SliceLink",
       
     },
     {
