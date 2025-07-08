@@ -27,6 +27,12 @@ const ProjectCard = ({ title, description, techStack, githubLink, liveDemoLink }
 const ProjectSection = () => {
   const projects = [
     {
+      title: "IntervAI",
+      description: "A job interview preparation platform powered by Vapi AI Voice agents.",
+      techStack: ["Next.js", "Firebase", "TailWindCSS"],
+      githubLink: "https://github.com/ShreyaMahadev/IntervAI",
+    },
+    {
       title: "SliceLink",
       description: "A simple and efficient URL Shortener that allows users to shorten long URLs for easier sharing and management.",
       techStack: ["Node.js", "Express", "MongoDB"],
@@ -51,12 +57,6 @@ const ProjectSection = () => {
       description: "A deep learning-based system to predict plant diseases using Convolutional Neural Networks.",
       techStack: ["Python", "TensorFlow", "Keras"],
       githubLink: "https://github.com/ShreyaMahadev/Plant_Disease_Prediction_Using_CNN",
-    },
-    {
-      title: "DSCE Nexus",
-      description: "A comprehensive platform where students can find the calendar of events",
-      techStack: ["React", "TailWindCSS"],
-      githubLink: "https://github.com/ShreyaMahadev/DSCE-Nexus",
     },
     {
       title: "Generating Hand Written Digits using DCGAN",

@@ -70,45 +70,48 @@
 
 /* Default Icon Colors */
 .github {
-  color: #333;
+  color: #fff;
 }
-
 .github:hover {
   color: #fff;
   background: rgba(51, 51, 51, 0.2);
 }
-
 .linkedin {
   color: #0077b5;
 }
-
 .linkedin:hover {
-  background: rgba(0, 119, 181, 0.2);
+  color:  #0077b5;
+  background: rgba(51, 51, 51, 0.2);
 }
+
 
 .email {
   color: #d44638;
 }
 
 .email:hover {
+  color: #d44638;
   background: rgba(212, 70, 56, 0.2);
 }
 
 .leetcode {
   color: #ffa116;
 }
-
 .leetcode:hover {
+  color:  #ffa116;
   background: rgba(255, 161, 22, 0.2);
 }
+
 
 .instagram {
   color: #E4405F;
 }
-
 .instagram:hover {
+  color:  #E4405F;
   background: rgba(228, 64, 95, 0.2);
 }
+
+
 
 /* Contact Message */
 .contact-message {
@@ -122,6 +125,30 @@
   font-family: Arial, sans-serif;
   position: relative;
   z-index: 1;
+}
+
+/* Contact Box */
+.contact-box {
+  background: rgba(32, 24, 44, 0.92);
+  border-radius: 28px;
+  box-shadow: 0 12px 40px rgba(80, 0, 120, 0.13), 0 2px 12px rgba(0,0,0,0.10);
+  padding: 56px 38px 38px 38px;
+  max-width: 480px;
+  margin: 70px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid rgba(168, 85, 247, 0.13);
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .contact-box {
+    padding: 22px 8px 18px 8px;
+    max-width: 98vw;
+    margin: 32px 1vw 0 1vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -148,4 +175,14 @@
   .contact-message {
     font-size: 0.9rem;
   }
+}
+
+.linkedin:hover {
+  color: #fff;
+  background: #0077b5;
+}
+
+.leetcode:hover {
+  color: #fff;
+  background: #ffa116;
 }

@@ -3,7 +3,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <>
+    <div className="contact-box">
       <h2 className="contact-title">Get In Touch</h2>
 
       <div className="social-links">
@@ -54,6 +54,6 @@ export default function Contact() {
         a good tech discussion, or to share your favorite programming pun.
         Let's make the tech world brighter!
       </p>
-    </>
+    </div>
   );
 }

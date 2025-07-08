@@ -3,10 +3,15 @@
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  
 }
 
 body {
   background: #0a0a0a;
+  min-height: 100vh;
+  /* Improve mobile responsiveness */
+  width: 100vw;
+  overflow-x: hidden;
   color: #fff;
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -125,34 +130,42 @@ body {
 
 @media (max-width: 768px) {
   .skills-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 20px 0;
-    gap: 20px;
-    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 16px;
+    overflow-x: unset;
+    scroll-snap-type: none;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .skill-item {
-    flex: 0 0 auto;
-    width: 120px;
-    scroll-snap-align: center;
-    margin: 0 10px;
+    width: 90px;
+    padding: 14px;
+    font-size: 0.85rem;
+    margin: 0 auto;
+    flex: unset;
+    scroll-snap-align: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70px;
   }
 
-  .skills-grid::-webkit-scrollbar {
-    height: 6px;
+  .skill-icon {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
   }
 
-  .skills-grid::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+  .skill-name {
+    font-size: 0.85rem;
   }
 
+  .skills-grid::-webkit-scrollbar,
+  .skills-grid::-webkit-scrollbar-track,
   .skills-grid::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #a855f7, #ec4899);
-    border-radius: 10px;
+    display: none;
   }
 }

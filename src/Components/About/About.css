@@ -96,6 +96,34 @@
   color: #fff;
 }
 
+.resume-link-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.resume-link {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  border: none;
+  border-radius: 8px; /* Changed from 30px to 8px for rectangular box */
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.2);
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  letter-spacing: 1px;
+}
+
+.resume-link:hover {
+  background: linear-gradient(135deg, #ec4899, #a855f7);
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.2);
+}
+
 @media (max-width: 768px) {
   #about {
     padding: 50px 15px;
