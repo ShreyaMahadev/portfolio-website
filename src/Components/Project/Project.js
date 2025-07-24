@@ -47,10 +47,10 @@ const ProjectSection = () => {
       
     },
     {
-      title: "CryptoTrackr",
-      description: "A cryptocurrency tracking application providing real-time updates and analytics.",
-      techStack: ["React", "TailWindCSS", "CoinGecko API"],
-      githubLink: "https://github.com/ShreyaMahadev/CryptoTrackr",
+      title: "AI-Powered Code Reviewer",
+      description: "An AI-powered code review tool that provides feedback and suggestions for code improvements.",
+      techStack: ["React", "Node.js", "Express.js", "OpenAI API"],
+      githubLink: "https://github.com/ShreyaMahadev/AI-Powered-Code-Reviewer",
     },
     {
       title: "Plant Disease Prediction Using CNN",
