@@ -7,7 +7,7 @@ export default function About() {
       <div className="container">
         {/* Circular Profile Picture */}
         <img
-          src="/profile.jpg" // Replace with your image URL
+          src="/profile_pic.jpg" // Replace with your image URL
           alt="Profile"
           className="profile-picture"
         />
@@ -26,12 +26,12 @@ export default function About() {
           deployment workflows, and infrastructure automation to complement my
           development skills and build end-to-end intelligent solutions.
         </p>
-        <div className="resume-link-container">
+        {/* <div className="resume-link-container">
           <a href="/Shreya_M_Resume.pdf" target="_blank"
             rel="noopener noreferrer" className="resume-link">
             View Resume
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );
