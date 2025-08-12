@@ -111,7 +111,13 @@
   background: rgba(228, 64, 95, 0.2);
 }
 
-
+.twitter {
+  color: #1da1f2;
+}
+.twitter:hover {
+  color: #fff;
+  background: #1da1f2;
+}
 
 /* Contact Message */
 .contact-message {
@@ -133,7 +139,7 @@
   border-radius: 28px;
   box-shadow: 0 12px 40px rgba(80, 0, 120, 0.13), 0 2px 12px rgba(0,0,0,0.10);
   padding: 56px 38px 38px 38px;
-  max-width: 480px;
+  max-width: 560px;
   margin: 70px auto 0 auto;
   display: flex;
   flex-direction: column;
@@ -185,4 +191,13 @@
 .leetcode:hover {
   color: #fff;
   background: #ffa116;
+}
+
+/* X (Twitter) logo styling */
+.x {
+  color: #000;
+}
+.x:hover {
+  color: #fff;
+  background: #000;
 }

@@ -47,6 +47,14 @@ export default function Contact() {
         >
           <i className="fab fa-instagram"></i>
         </a>
+        <a
+          href="https://twitter.com/_shreya_mahadev"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon x"
+        >
+          <i className="fab fa-x-twitter"></i>
+        </a>
       </div>
 
       <p className="contact-message">
